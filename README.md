@@ -1,2 +1,2 @@
-# usuariosdj
-proyecto para el manejo de usuarios en django
+# Usuario Django
+Aprendiendo a manejar la gestion de usuario en django.
