@@ -1,6 +1,5 @@
 from django.core.exceptions import ImproperlyConfigured
 import json
-from pexpect import which
 
 from unipath import Path
 
@@ -33,7 +32,10 @@ DJANGO_APPS = [
 ]
 
 # Aplication locales
-LOCAL_APPS = []
+LOCAL_APPS = [
+    'applications.users',
+    'applications.home'
+]
 
 # Aplications de terceros
 THIRD_PARTY_APPS = []
@@ -84,6 +86,8 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+
+AUTH_USER_MODEL = 'users.User'
 
 LANGUAGE_CODE = 'en-us'
 TIME_ZONE = 'UTC'
